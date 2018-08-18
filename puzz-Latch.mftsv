@@ -1,0 +1,16 @@
+0451
+0.05
+-MODULE 0 START-
+1 (Number)
+176,544
+NAME: Number 1
+-CONFIG START-
+3 15
+-CONFIG END-
+-MODULE 0 END-
+-MODULE 1 START-
+3 (Latch)
+464,544
+NAME: Latch 1
+port #0 <- module #0 port #0
+-MODULE 1 END-

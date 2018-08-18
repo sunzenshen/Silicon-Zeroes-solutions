@@ -1,0 +1,53 @@
+0451
+0.05
+-CLOCK PERIOD START-
+29
+-CLOCK PERIOD END-
+-MODULE 0 START-
+5 (Reader)
+688,416
+NAME: Reader 1
+port #0 <- module #1 port #1
+-MODULE 0 END-
+-MODULE 1 START-
+3 (Latch)
+464,576
+NAME: Latch 5
+port #0 <- module #3 port #2
+-MODULE 1 END-
+-MODULE 2 START-
+1 (Number)
+96,528
+NAME: Number 5
+-CONFIG START-
+3 1
+-CONFIG END-
+-MODULE 2 END-
+-MODULE 3 START-
+2 (Adder)
+272,528
+NAME: Adder 5
+port #0 <- module #2 port #0
+port #1 <- module #1 port #1
+-MODULE 3 END-
+-MODULE 4 START-
+6 (Instruction Decoder)
+688,576
+NAME: Instruction Decoder 1
+port #0 <- module #0 port #1
+-MODULE 4 END-
+-MODULE 5 START-
+4 (Writer)
+992,592
+NAME: Writer 1
+port #0 <- module #6 port #0
+port #1 <- module #4 port #4
+-MODULE 5 END-
+-MODULE 6 START-
+1 (Number)
+992,752
+NAME: Number 1
+-CONFIG START-
+3 0
+-CONFIG END-
+-MODULE 6 END-

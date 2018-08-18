@@ -1,0 +1,152 @@
+0451
+0.05
+-CLOCK PERIOD START-
+27
+-CLOCK PERIOD END-
+-MODULE 0 START-
+3 (Latch)
+-224,624
+NAME: Latch 5
+port #0 <- module #1 port #2
+-MODULE 0 END-
+-MODULE 1 START-
+2 (Adder)
+-416,576
+NAME: Adder 5
+port #0 <- module #2 port #0
+port #1 <- module #0 port #1
+-MODULE 1 END-
+-MODULE 2 START-
+1 (Number)
+-592,576
+NAME: Number 5
+-CONFIG START-
+3 1
+-CONFIG END-
+-MODULE 2 END-
+-MODULE 3 START-
+5 (Reader)
+80,640
+NAME: Reader 1
+port #0 <- module #0 port #1
+-MODULE 3 END-
+-MODULE 4 START-
+6 (Instruction Decoder)
+880,672
+NAME: Instruction Decoder 1
+port #0 <- module #8 port #1
+-MODULE 4 END-
+-MODULE 5 START-
+12 (Register)
+2560,-176
+NAME: Register 1
+port #0 <- module #7 port #2
+port #1 <- module #7 port #3
+port #2 <- module #7 port #4
+port #3 <- module #7 port #5
+port #4 <- module #7 port #6
+port #5 <- module #7 port #7
+port #6 <- module #7 port #8
+port #7 <- module #7 port #9
+-CONFIG START-
+3 8
+-CONFIG END-
+-MODULE 5 END-
+-MODULE 6 START-
+11 (Op Selector)
+2016,-144
+NAME: Op Selector 1
+port #0 <- module #4 port #2
+port #1 <- module #11 port #2
+port #3 <- module #4 port #1
+-CONFIG START-
+3 15
+-CONFIG END-
+-MODULE 6 END-
+-MODULE 7 START-
+8 (Output Selector)
+2384,-208
+NAME: Output Selector 1
+port #0 <- module #6 port #4
+port #1 <- module #4 port #4
+-CONFIG START-
+3 8
+-CONFIG END-
+-MODULE 7 END-
+-MODULE 8 START-
+12 (Register)
+432,672
+NAME: Register 2
+port #0 <- module #3 port #1
+-CONFIG START-
+3 1
+-CONFIG END-
+-MODULE 8 END-
+-MODULE 9 START-
+7 (Input Selector)
+3200,464
+NAME: SRC REG
+port #0 <- module #5 port #8
+port #1 <- module #5 port #9
+port #2 <- module #5 port #10
+port #3 <- module #5 port #11
+port #4 <- module #5 port #12
+port #5 <- module #5 port #13
+port #6 <- module #5 port #14
+port #7 <- module #5 port #15
+port #8 <- module #4 port #2
+-CONFIG START-
+3 8
+-CONFIG END-
+-MODULE 9 END-
+-MODULE 10 START-
+7 (Input Selector)
+3200,1024
+NAME: TRG REG
+port #0 <- module #5 port #8
+port #1 <- module #5 port #9
+port #2 <- module #5 port #10
+port #3 <- module #5 port #11
+port #4 <- module #5 port #12
+port #5 <- module #5 port #13
+port #6 <- module #5 port #14
+port #7 <- module #5 port #15
+port #8 <- module #4 port #3
+-CONFIG START-
+3 8
+-CONFIG END-
+-MODULE 10 END-
+-MODULE 11 START-
+2 (Adder)
+3536,848
+NAME: Adder 1
+port #0 <- module #9 port #9
+port #1 <- module #10 port #9
+-MODULE 11 END-
+-MODULE 12 START-
+11 (Op Selector)
+3904,288
+NAME: Mem to set (TGR)
+port #2 <- module #10 port #9
+port #3 <- module #4 port #1
+-CONFIG START-
+3 15
+-CONFIG END-
+-MODULE 12 END-
+-MODULE 13 START-
+4 (Writer)
+4288,384
+NAME: Writer 1
+port #0 <- module #14 port #4
+port #1 <- module #12 port #4
+-MODULE 13 END-
+-MODULE 14 START-
+11 (Op Selector)
+3904,704
+NAME: SRC Val to set
+port #2 <- module #9 port #9
+port #3 <- module #4 port #1
+-CONFIG START-
+3 15
+-CONFIG END-
+-MODULE 14 END-

@@ -1,0 +1,16 @@
+0451
+0.05
+-MODULE 0 START-
+2 (Adder)
+448,544
+NAME: Adder 1
+port #0 <- module #0 port #2
+port #1 <- module #0 port #2
+-MODULE 0 END-
+-MODULE 1 START-
+4 (Writer)
+784,544
+NAME: Writer 1
+port #0 <- module #0 port #2
+port #1 <- module #0 port #2
+-MODULE 1 END-

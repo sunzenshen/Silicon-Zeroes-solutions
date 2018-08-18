@@ -1,0 +1,61 @@
+0451
+0.05
+-MODULE 0 START-
+12 (Register)
+1408,528
+NAME: Register 1
+port #0 <- module #6 port #2
+port #1 <- module #6 port #3
+port #2 <- module #6 port #4
+port #3 <- module #6 port #5
+port #4 <- module #6 port #6
+port #5 <- module #6 port #7
+port #6 <- module #6 port #8
+port #7 <- module #6 port #9
+-CONFIG START-
+3 8
+-CONFIG END-
+-MODULE 0 END-
+-MODULE 1 START-
+2 (Adder)
+208,448
+NAME: Adder 6
+port #0 <- module #3 port #0
+port #1 <- module #2 port #1
+-MODULE 1 END-
+-MODULE 2 START-
+3 (Latch)
+400,496
+NAME: Latch 6
+port #0 <- module #1 port #2
+-MODULE 2 END-
+-MODULE 3 START-
+1 (Number)
+32,448
+NAME: Number 6
+-CONFIG START-
+3 1
+-CONFIG END-
+-MODULE 3 END-
+-MODULE 4 START-
+5 (Reader)
+656,512
+NAME: Reader 1
+port #0 <- module #2 port #1
+-MODULE 4 END-
+-MODULE 5 START-
+6 (Instruction Decoder)
+896,544
+NAME: Instruction Decoder 1
+port #0 <- module #4 port #1
+-MODULE 5 END-
+-MODULE 6 START-
+8 (Output Selector)
+1136,496
+NAME: Output Selector 1
+port #0 <- module #5 port #2
+port #1 <- module #5 port #4
+-CONFIG START-
+3 8
+-CONFIG END-
+-MODULE 6 END-

@@ -1,0 +1,34 @@
+0451
+0.05
+-MODULE 0 START-
+10 (Subtract)
+736,720
+NAME: Subtract 1
+port #0 <- module #1 port #1
+port #1 <- module #2 port #1
+-MODULE 0 END-
+-MODULE 1 START-
+3 (Latch)
+208,720
+NAME: Latch 1
+-MODULE 1 END-
+-MODULE 2 START-
+5 (Reader)
+432,736
+NAME: Reader 1
+port #0 <- module #1 port #1
+-MODULE 2 END-
+-MODULE 3 START-
+4 (Writer)
+1104,688
+NAME: Writer 1
+port #0 <- module #4 port #2
+port #1 <- module #1 port #1
+-MODULE 3 END-
+-MODULE 4 START-
+10 (Subtract)
+944,400
+NAME: Subtract 2
+port #0 <- module #2 port #1
+port #1 <- module #0 port #2
+-MODULE 4 END-

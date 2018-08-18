@@ -1,0 +1,79 @@
+0451
+0.05
+-MODULE 0 START-
+1 (Number)
+-240,432
+NAME: Number 6
+-CONFIG START-
+3 1
+-CONFIG END-
+-MODULE 0 END-
+-MODULE 1 START-
+3 (Latch)
+128,480
+NAME: Latch 6
+port #0 <- module #2 port #2
+-MODULE 1 END-
+-MODULE 2 START-
+2 (Adder)
+-64,432
+NAME: Adder 6
+port #0 <- module #0 port #0
+port #1 <- module #1 port #1
+-MODULE 2 END-
+-MODULE 3 START-
+4 (Writer)
+1488,352
+NAME: Writer 1
+port #0 <- module #4 port #2
+port #1 <- module #1 port #1
+-MODULE 3 END-
+-MODULE 4 START-
+8 (Output Selector)
+800,848
+NAME: Output Selector 1
+port #0 <- module #7 port #0
+port #1 <- module #5 port #1
+-CONFIG START-
+3 2
+-CONFIG END-
+-MODULE 4 END-
+-MODULE 5 START-
+5 (Reader)
+544,704
+NAME: Reader 1
+port #0 <- module #1 port #1
+-MODULE 5 END-
+-MODULE 6 START-
+4 (Writer)
+1488,784
+NAME: Writer 2
+port #0 <- module #8 port #3
+port #1 <- module #1 port #1
+-MODULE 6 END-
+-MODULE 7 START-
+1 (Number)
+640,880
+NAME: Number 1
+-CONFIG START-
+3 1
+-CONFIG END-
+-MODULE 7 END-
+-MODULE 8 START-
+8 (Output Selector)
+880,592
+NAME: Output Selector 2
+port #0 <- module #9 port #0
+port #1 <- module #5 port #1
+-CONFIG START-
+3 2
+-CONFIG END-
+-MODULE 8 END-
+-MODULE 9 START-
+1 (Number)
+720,624
+NAME: Number 2
+-CONFIG START-
+3 0
+-CONFIG END-
+-MODULE 9 END-

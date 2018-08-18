@@ -1,0 +1,17 @@
+0451
+0.05
+-MODULE 0 START-
+1 (Number)
+320,384
+NAME: Number 1
+-CONFIG START-
+3 2
+-CONFIG END-
+-MODULE 0 END-
+-MODULE 1 START-
+2 (Adder)
+608,368
+NAME: Adder 1
+port #0 <- module #0 port #0
+port #1 <- module #0 port #0
+-MODULE 1 END-

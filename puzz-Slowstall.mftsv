@@ -1,0 +1,26 @@
+0451
+0.05
+-CLOCK PERIOD START-
+13
+-CLOCK PERIOD END-
+-MODULE 0 START-
+3 (Latch)
+320,528
+NAME: Latch 1
+-MODULE 0 END-
+-MODULE 1 START-
+12 (Register)
+544,528
+NAME: Register 1
+port #0 <- module #0 port #1
+-CONFIG START-
+3 1
+-CONFIG END-
+-MODULE 1 END-
+-MODULE 2 START-
+4 (Writer)
+752,496
+NAME: Writer 1
+port #0 <- module #1 port #1
+port #1 <- module #1 port #1
+-MODULE 2 END-

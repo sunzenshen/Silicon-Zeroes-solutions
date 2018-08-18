@@ -1,0 +1,43 @@
+0451
+0.05
+-MODULE 0 START-
+5 (Reader)
+624,608
+NAME: Reader 1
+port #0 <- module #1 port #1
+-MODULE 0 END-
+-MODULE 1 START-
+3 (Latch)
+320,464
+NAME: Latch 1
+port #0 <- module #4 port #2
+-MODULE 1 END-
+-MODULE 2 START-
+4 (Writer)
+1056,256
+NAME: Writer 1
+port #0 <- module #5 port #1
+port #1 <- module #1 port #1
+-MODULE 2 END-
+-MODULE 3 START-
+9 (Equals)
+1280,736
+NAME: Equals 1
+port #0 <- module #5 port #1
+-CONFIG START-
+3 2
+-CONFIG END-
+-MODULE 3 END-
+-MODULE 4 START-
+2 (Adder)
+560,832
+NAME: Adder 1
+port #0 <- module #1 port #1
+port #1 <- module #3 port #2
+-MODULE 4 END-
+-MODULE 5 START-
+5 (Reader)
+1072,512
+NAME: Reader 2
+port #0 <- module #0 port #1
+-MODULE 5 END-

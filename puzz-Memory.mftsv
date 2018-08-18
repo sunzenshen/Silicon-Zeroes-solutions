@@ -1,0 +1,16 @@
+0451
+0.05
+-MODULE 0 START-
+5 (Reader)
+464,336
+NAME: Reader 1
+port #0 <- module #1 port #0
+-MODULE 0 END-
+-MODULE 1 START-
+1 (Number)
+208,320
+NAME: Number 1
+-CONFIG START-
+3 10
+-CONFIG END-
+-MODULE 1 END-

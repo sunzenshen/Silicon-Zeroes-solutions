@@ -1,0 +1,42 @@
+0451
+0.05
+-MODULE 0 START-
+1 (Number)
+32,496
+NAME: Number 6
+-CONFIG START-
+3 1
+-CONFIG END-
+-MODULE 0 END-
+-MODULE 1 START-
+3 (Latch)
+400,544
+NAME: Latch 6
+port #0 <- module #2 port #2
+-MODULE 1 END-
+-MODULE 2 START-
+2 (Adder)
+208,496
+NAME: Adder 6
+port #0 <- module #0 port #0
+port #1 <- module #1 port #1
+-MODULE 2 END-
+-MODULE 3 START-
+5 (Reader)
+640,560
+NAME: Reader 1
+port #0 <- module #1 port #1
+-MODULE 3 END-
+-MODULE 4 START-
+6 (Instruction Decoder)
+848,592
+NAME: Instruction Decoder 1
+port #0 <- module #3 port #1
+-MODULE 4 END-
+-MODULE 5 START-
+4 (Writer)
+1152,656
+NAME: Writer 1
+port #0 <- module #4 port #2
+port #1 <- module #4 port #4
+-MODULE 5 END-

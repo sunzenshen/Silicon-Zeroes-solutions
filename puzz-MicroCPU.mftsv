@@ -1,0 +1,75 @@
+0451
+0.05
+-MODULE 0 START-
+3 (Latch)
+320,592
+NAME: PC
+port #0 <- module #1 port #2
+-MODULE 0 END-
+-MODULE 1 START-
+2 (Adder)
+320,432
+NAME: Adder 1
+port #0 <- module #0 port #1
+port #1 <- module #2 port #0
+-MODULE 1 END-
+-MODULE 2 START-
+1 (Number)
+160,480
+NAME: Number 1
+-CONFIG START-
+3 1
+-CONFIG END-
+-MODULE 2 END-
+-MODULE 3 START-
+5 (Reader)
+528,608
+NAME: Reader 1
+port #0 <- module #0 port #1
+-MODULE 3 END-
+-MODULE 4 START-
+6 (Instruction Decoder)
+752,640
+NAME: Instruction Decoder 1
+port #0 <- module #3 port #1
+-MODULE 4 END-
+-MODULE 5 START-
+5 (Reader)
+1056,528
+NAME: LDAC
+port #0 <- module #4 port #3
+-MODULE 5 END-
+-MODULE 6 START-
+12 (Register)
+1392,544
+NAME: accumulator
+port #0 <- module #8 port #4
+-CONFIG START-
+3 1
+-CONFIG END-
+-MODULE 6 END-
+-MODULE 7 START-
+4 (Writer)
+1712,512
+NAME: Writer 1
+port #0 <- module #6 port #1
+port #1 <- module #4 port #4
+-MODULE 7 END-
+-MODULE 8 START-
+11 (Op Selector)
+1184,880
+NAME: Op Selector 1
+port #0 <- module #5 port #1
+port #1 <- module #9 port #2
+port #3 <- module #4 port #1
+-CONFIG START-
+3 36
+-CONFIG END-
+-MODULE 8 END-
+-MODULE 9 START-
+2 (Adder)
+1472,272
+NAME: Adder 2
+port #0 <- module #4 port #2
+port #1 <- module #6 port #1
+-MODULE 9 END-

@@ -1,0 +1,56 @@
+0451
+0.05
+-MODULE 0 START-
+4 (Writer)
+384,64
+NAME: Writer 1
+port #0 <- module #5 port #2
+port #1 <- module #1 port #1
+-MODULE 0 END-
+-MODULE 1 START-
+3 (Latch)
+-160,448
+NAME: Latch 3
+port #0 <- module #2 port #2
+-MODULE 1 END-
+-MODULE 2 START-
+2 (Adder)
+-352,400
+NAME: Adder 3
+port #0 <- module #3 port #0
+port #1 <- module #1 port #1
+-MODULE 2 END-
+-MODULE 3 START-
+1 (Number)
+-560,400
+NAME: Number 3
+-CONFIG START-
+3 1
+-CONFIG END-
+-MODULE 3 END-
+-MODULE 4 START-
+3 (Latch)
+160,432
+NAME: Latch 1
+port #0 <- module #7 port #2
+-MODULE 4 END-
+-MODULE 5 START-
+2 (Adder)
+400,464
+NAME: Adder 1
+port #0 <- module #3 port #0
+port #1 <- module #4 port #1
+-MODULE 5 END-
+-MODULE 6 START-
+3 (Latch)
+656,464
+NAME: Latch 2
+port #0 <- module #5 port #2
+-MODULE 6 END-
+-MODULE 7 START-
+10 (Subtract)
+688,736
+NAME: Subtract 1
+port #0 <- module #6 port #1
+port #1 <- module #3 port #0
+-MODULE 7 END-

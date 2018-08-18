@@ -1,0 +1,28 @@
+0451
+0.05
+-CLOCK PERIOD START-
+13
+-CLOCK PERIOD END-
+-MODULE 0 START-
+4 (Writer)
+608,464
+NAME: Writer 1
+port #0 <- module #2 port #0
+port #1 <- module #1 port #0
+-MODULE 0 END-
+-MODULE 1 START-
+1 (Number)
+416,448
+NAME: Number 1
+-CONFIG START-
+3 1
+-CONFIG END-
+-MODULE 1 END-
+-MODULE 2 START-
+1 (Number)
+416,496
+NAME: Number 2
+-CONFIG START-
+3 2
+-CONFIG END-
+-MODULE 2 END-

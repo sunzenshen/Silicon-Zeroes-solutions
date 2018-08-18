@@ -1,0 +1,47 @@
+0451
+0.05
+-MODULE 0 START-
+1 (Number)
+416,448
+NAME: Number 1
+-CONFIG START-
+3 1
+-CONFIG END-
+-MODULE 0 END-
+-MODULE 1 START-
+4 (Writer)
+608,432
+NAME: Writer 1
+port #0 <- module #0 port #0
+port #1 <- module #0 port #0
+-MODULE 1 END-
+-MODULE 2 START-
+4 (Writer)
+608,624
+NAME: Writer 2
+port #0 <- module #3 port #0
+port #1 <- module #3 port #0
+-MODULE 2 END-
+-MODULE 3 START-
+1 (Number)
+416,640
+NAME: Number 2
+-CONFIG START-
+3 2
+-CONFIG END-
+-MODULE 3 END-
+-MODULE 4 START-
+1 (Number)
+416,832
+NAME: Number 3
+-CONFIG START-
+3 3
+-CONFIG END-
+-MODULE 4 END-
+-MODULE 5 START-
+4 (Writer)
+608,816
+NAME: Writer 3
+port #0 <- module #4 port #0
+port #1 <- module #4 port #0
+-MODULE 5 END-

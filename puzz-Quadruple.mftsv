@@ -1,0 +1,40 @@
+0451
+0.05
+-CLOCK PERIOD START-
+1
+-CLOCK PERIOD END-
+-MODULE 0 START-
+5 (Reader)
+304,624
+NAME: Reader 1
+port #0 <- module #1 port #0
+-MODULE 0 END-
+-MODULE 1 START-
+1 (Number)
+144,608
+NAME: Number 1
+-CONFIG START-
+3 0
+-CONFIG END-
+-MODULE 1 END-
+-MODULE 2 START-
+2 (Adder)
+640,608
+NAME: Adder 1
+port #0 <- module #0 port #1
+port #1 <- module #0 port #1
+-MODULE 2 END-
+-MODULE 3 START-
+2 (Adder)
+640,400
+NAME: Adder 2
+port #0 <- module #0 port #1
+port #1 <- module #0 port #1
+-MODULE 3 END-
+-MODULE 4 START-
+2 (Adder)
+944,496
+NAME: Adder 3
+port #0 <- module #3 port #2
+port #1 <- module #2 port #2
+-MODULE 4 END-
