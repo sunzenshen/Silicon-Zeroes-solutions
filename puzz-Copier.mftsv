@@ -1,0 +1,64 @@
+0451
+0.08
+-CLOCK PERIOD START-
+15
+-CLOCK PERIOD END-
+-MODULE 0 START-
+5 (Reader)
+-160,576
+NAME: Reader 1
+port #0 <- module #2 port #1
+-MODULE 0 END-
+-MODULE 1 START-
+4 (Writer)
+272,496
+NAME: Writer 1
+port #0 <- module #7 port #3
+port #1 <- module #7 port #2
+-MODULE 1 END-
+-MODULE 2 START-
+3 (Latch)
+-336,560
+NAME: Latch 1
+port #0 <- module #3 port #2
+-MODULE 2 END-
+-MODULE 3 START-
+2 (Adder)
+-512,560
+NAME: Adder 1
+port #0 <- module #2 port #1
+port #1 <- module #4 port #0
+-MODULE 3 END-
+-MODULE 4 START-
+1 (Number)
+-672,608
+NAME: Number 1
+-CONFIG START-
+3 1
+-CONFIG END-
+-MODULE 4 END-
+-MODULE 5 START-
+2 (Adder)
+-160,336
+NAME: Adder 2
+port #0 <- module #6 port #0
+port #1 <- module #2 port #1
+-MODULE 5 END-
+-MODULE 6 START-
+1 (Number)
+-320,336
+NAME: Number 2
+-CONFIG START-
+3 1
+-CONFIG END-
+-MODULE 6 END-
+-MODULE 7 START-
+12 (Register)
+96,480
+NAME: Register 1
+port #0 <- module #5 port #2
+port #1 <- module #0 port #1
+-CONFIG START-
+3 2
+-CONFIG END-
+-MODULE 7 END-

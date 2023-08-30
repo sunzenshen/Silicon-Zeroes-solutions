@@ -1,0 +1,231 @@
+0451
+0.08
+-CLOCK PERIOD START-
+1
+-CLOCK PERIOD END-
+-MODULE 0 START-
+3 (Latch)
+64,304
+NAME: Latch 1
+port #0 <- module #18 port #2
+-MODULE 0 END-
+-MODULE 1 START-
+5 (Reader)
+768,304
+NAME: Reader 1
+port #0 <- module #22 port #2
+-MODULE 1 END-
+-MODULE 2 START-
+5 (Reader)
+768,448
+NAME: Reader 2
+port #0 <- module #3 port #2
+-MODULE 2 END-
+-MODULE 3 START-
+2 (Adder)
+544,448
+NAME: Adder 2
+port #0 <- module #22 port #2
+port #1 <- module #4 port #0
+-MODULE 3 END-
+-MODULE 4 START-
+1 (Number)
+384,496
+NAME: Number 2
+-CONFIG START-
+3 1
+-CONFIG END-
+-MODULE 4 END-
+-MODULE 5 START-
+2 (Adder)
+544,608
+NAME: Adder 3
+port #0 <- module #3 port #2
+port #1 <- module #6 port #0
+-MODULE 5 END-
+-MODULE 6 START-
+1 (Number)
+384,656
+NAME: Number 3
+-CONFIG START-
+3 1
+-CONFIG END-
+-MODULE 6 END-
+-MODULE 7 START-
+4 (Writer)
+1776,624
+NAME: Writer 1
+port #0 <- module #8 port #1
+port #1 <- module #24 port #3
+-MODULE 7 END-
+-MODULE 8 START-
+3 (Latch)
+1248,320
+NAME: Latch 2
+port #0 <- module #9 port #3
+-MODULE 8 END-
+-MODULE 9 START-
+7 (Input Selector)
+1072,288
+NAME: Input Selector 1
+port #0 <- module #10 port #2
+port #1 <- module #17 port #0
+port #2 <- module #15 port #2
+-CONFIG START-
+3 2
+-CONFIG END-
+-MODULE 9 END-
+-MODULE 10 START-
+2 (Adder)
+1424,320
+NAME: Adder 4
+port #0 <- module #8 port #1
+port #1 <- module #2 port #1
+-MODULE 10 END-
+-MODULE 11 START-
+7 (Input Selector)
+1072,48
+NAME: Input Selector 2
+port #0 <- module #13 port #2
+port #1 <- module #1 port #1
+port #2 <- module #15 port #2
+-CONFIG START-
+3 2
+-CONFIG END-
+-MODULE 11 END-
+-MODULE 12 START-
+3 (Latch)
+1248,80
+NAME: Latch 3
+port #0 <- module #11 port #3
+-MODULE 12 END-
+-MODULE 13 START-
+2 (Adder)
+1424,80
+NAME: Adder 5
+port #0 <- module #12 port #1
+port #1 <- module #14 port #0
+-MODULE 13 END-
+-MODULE 14 START-
+1 (Number)
+1248,224
+NAME: Number 4
+-CONFIG START-
+3 -1
+-CONFIG END-
+-MODULE 14 END-
+-MODULE 15 START-
+9 (Equals)
+1424,-96
+NAME: Equals 1
+port #0 <- module #16 port #0
+port #1 <- module #12 port #1
+-CONFIG START-
+3 2
+-CONFIG END-
+-MODULE 15 END-
+-MODULE 16 START-
+1 (Number)
+1264,-96
+NAME: Number 5
+-CONFIG START-
+3 0
+-CONFIG END-
+-MODULE 16 END-
+-MODULE 17 START-
+1 (Number)
+1040,496
+NAME: Number 6
+-CONFIG START-
+3 0
+-CONFIG END-
+-MODULE 17 END-
+-MODULE 18 START-
+2 (Adder)
+240,304
+NAME: Adder 1
+port #0 <- module #0 port #1
+port #1 <- module #19 port #3
+-MODULE 18 END-
+-MODULE 19 START-
+7 (Input Selector)
+240,80
+NAME: Input Selector 3
+port #0 <- module #21 port #0
+port #1 <- module #20 port #0
+port #2 <- module #15 port #2
+-CONFIG START-
+3 2
+-CONFIG END-
+-MODULE 19 END-
+-MODULE 20 START-
+1 (Number)
+80,160
+NAME: Number 1
+-CONFIG START-
+3 3
+-CONFIG END-
+-MODULE 20 END-
+-MODULE 21 START-
+1 (Number)
+80,112
+NAME: Number 7
+-CONFIG START-
+3 0
+-CONFIG END-
+-MODULE 21 END-
+-MODULE 22 START-
+2 (Adder)
+464,224
+NAME: Adder 6
+port #0 <- module #18 port #2
+port #1 <- module #23 port #0
+-MODULE 22 END-
+-MODULE 23 START-
+1 (Number)
+496,112
+NAME: Number 8
+-CONFIG START-
+3 -3
+-CONFIG END-
+-MODULE 23 END-
+-MODULE 24 START-
+7 (Input Selector)
+1504,576
+NAME: Input Selector 4
+port #1 <- module #25 port #1
+port #2 <- module #26 port #3
+-CONFIG START-
+3 2
+-CONFIG END-
+-MODULE 24 END-
+-MODULE 25 START-
+3 (Latch)
+1296,656
+NAME: Latch 5
+port #0 <- module #5 port #2
+-MODULE 25 END-
+-MODULE 26 START-
+7 (Input Selector)
+1872,320
+NAME: Input Selector 5
+port #1 <- module #15 port #2
+port #2 <- module #27 port #1
+-CONFIG START-
+3 2
+-CONFIG END-
+-MODULE 26 END-
+-MODULE 27 START-
+3 (Latch)
+1696,304
+NAME: Latch 4
+port #0 <- module #28 port #0
+-MODULE 27 END-
+-MODULE 28 START-
+1 (Number)
+1664,192
+NAME: Number 9
+-CONFIG START-
+3 1
+-CONFIG END-
+-MODULE 28 END-

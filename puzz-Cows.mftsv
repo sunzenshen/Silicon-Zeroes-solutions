@@ -1,0 +1,83 @@
+0451
+0.08
+-CLOCK PERIOD START-
+1
+-CLOCK PERIOD END-
+-MODULE 0 START-
+4 (Writer)
+512,320
+NAME: Writer 1
+port #0 <- module #9 port #2
+port #1 <- module #7 port #1
+-MODULE 0 END-
+-MODULE 1 START-
+3 (Latch)
+-80,352
+NAME: Latch 1
+port #0 <- module #9 port #2
+-MODULE 1 END-
+-MODULE 2 START-
+3 (Latch)
+96,352
+NAME: Latch 2
+port #0 <- module #1 port #1
+-MODULE 2 END-
+-MODULE 3 START-
+3 (Latch)
+272,352
+NAME: Latch 3
+port #0 <- module #2 port #1
+-MODULE 3 END-
+-MODULE 4 START-
+2 (Adder)
+-432,352
+NAME: Adder 1
+port #0 <- module #1 port #1
+port #1 <- module #3 port #1
+-MODULE 4 END-
+-MODULE 5 START-
+2 (Adder)
+-160,112
+NAME: Adder 2
+port #0 <- module #7 port #1
+port #1 <- module #6 port #0
+-MODULE 5 END-
+-MODULE 6 START-
+1 (Number)
+-320,160
+NAME: Number 1
+-CONFIG START-
+3 1
+-CONFIG END-
+-MODULE 6 END-
+-MODULE 7 START-
+3 (Latch)
+16,112
+NAME: Latch 4
+port #0 <- module #5 port #2
+-MODULE 7 END-
+-MODULE 8 START-
+9 (Equals)
+-240,560
+NAME: Equals 1
+port #0 <- module #1 port #1
+port #1 <- module #10 port #0
+-CONFIG START-
+3 2
+-CONFIG END-
+-MODULE 8 END-
+-MODULE 9 START-
+2 (Adder)
+-256,352
+NAME: Adder 3
+port #0 <- module #4 port #2
+port #1 <- module #8 port #2
+-MODULE 9 END-
+-MODULE 10 START-
+1 (Number)
+-400,608
+NAME: Number 2
+-CONFIG START-
+3 0
+-CONFIG END-
+-MODULE 10 END-
