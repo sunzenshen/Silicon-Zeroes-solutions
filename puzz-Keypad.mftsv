@@ -1,0 +1,213 @@
+0451
+0.08
+-CLOCK PERIOD START-
+1
+-CLOCK PERIOD END-
+-MODULE 0 START-
+2 (Adder)
+288,416
+NAME: Adder 1
+port #0 <- module #1 port #1
+port #1 <- module #2 port #0
+-MODULE 0 END-
+-MODULE 1 START-
+3 (Latch)
+464,416
+NAME: Latch 1
+port #0 <- module #0 port #2
+-MODULE 1 END-
+-MODULE 2 START-
+1 (Number)
+128,464
+NAME: Number 1
+-CONFIG START-
+3 1
+-CONFIG END-
+-MODULE 2 END-
+-MODULE 3 START-
+5 (Reader)
+640,432
+NAME: Reader 1
+port #0 <- module #1 port #1
+-MODULE 3 END-
+-MODULE 4 START-
+5 (Reader)
+640,224
+NAME: Reader 2
+port #0 <- module #9 port #0
+-MODULE 4 END-
+-MODULE 5 START-
+5 (Reader)
+640,80
+NAME: Reader 3
+port #0 <- module #8 port #0
+-MODULE 5 END-
+-MODULE 6 START-
+5 (Reader)
+640,-64
+NAME: Reader 4
+port #0 <- module #7 port #0
+-MODULE 6 END-
+-MODULE 7 START-
+1 (Number)
+480,-80
+NAME: Number 2
+-CONFIG START-
+3 0
+-CONFIG END-
+-MODULE 7 END-
+-MODULE 8 START-
+1 (Number)
+480,64
+NAME: Number 3
+-CONFIG START-
+3 1
+-CONFIG END-
+-MODULE 8 END-
+-MODULE 9 START-
+1 (Number)
+480,208
+NAME: Number 4
+-CONFIG START-
+3 2
+-CONFIG END-
+-MODULE 9 END-
+-MODULE 10 START-
+9 (Equals)
+1024,80
+NAME: Equals 1
+port #0 <- module #5 port #1
+port #1 <- module #13 port #4
+-CONFIG START-
+3 2
+-CONFIG END-
+-MODULE 10 END-
+-MODULE 11 START-
+9 (Equals)
+1024,-80
+NAME: Equals 2
+port #0 <- module #6 port #1
+port #1 <- module #13 port #5
+-CONFIG START-
+3 2
+-CONFIG END-
+-MODULE 11 END-
+-MODULE 12 START-
+9 (Equals)
+1024,240
+NAME: Equals 3
+port #0 <- module #4 port #1
+port #1 <- module #13 port #3
+-CONFIG START-
+3 2
+-CONFIG END-
+-MODULE 12 END-
+-MODULE 13 START-
+12 (Register)
+816,464
+NAME: Register 1
+port #0 <- module #3 port #1
+port #1 <- module #13 port #3
+port #2 <- module #13 port #4
+-CONFIG START-
+3 3
+-CONFIG END-
+-MODULE 13 END-
+-MODULE 14 START-
+2 (Adder)
+1296,80
+NAME: Adder 2
+port #0 <- module #11 port #2
+port #1 <- module #10 port #2
+-MODULE 14 END-
+-MODULE 15 START-
+2 (Adder)
+1472,80
+NAME: Adder 3
+port #0 <- module #14 port #2
+port #1 <- module #12 port #2
+-MODULE 15 END-
+-MODULE 16 START-
+7 (Input Selector)
+1648,96
+NAME: Input Selector 1
+port #0 <- module #17 port #0
+port #1 <- module #17 port #0
+port #2 <- module #17 port #0
+port #3 <- module #18 port #0
+port #4 <- module #15 port #2
+-CONFIG START-
+3 4
+-CONFIG END-
+-MODULE 16 END-
+-MODULE 17 START-
+1 (Number)
+1344,336
+NAME: Number 5
+-CONFIG START-
+3 0
+-CONFIG END-
+-MODULE 17 END-
+-MODULE 18 START-
+1 (Number)
+1344,384
+NAME: Number 6
+-CONFIG START-
+3 1
+-CONFIG END-
+-MODULE 18 END-
+-MODULE 19 START-
+4 (Writer)
+1824,96
+NAME: Writer 1
+port #0 <- module #16 port #5
+port #1 <- module #20 port #7
+-MODULE 19 END-
+-MODULE 20 START-
+12 (Register)
+1744,-288
+NAME: Register 2
+port #0 <- module #24 port #2
+port #1 <- module #20 port #4
+port #2 <- module #20 port #5
+port #3 <- module #20 port #6
+-CONFIG START-
+3 4
+-CONFIG END-
+-MODULE 20 END-
+-MODULE 21 START-
+2 (Adder)
+1120,-256
+NAME: Adder 4
+port #0 <- module #22 port #1
+port #1 <- module #23 port #0
+-MODULE 21 END-
+-MODULE 22 START-
+3 (Latch)
+1296,-256
+NAME: Latch 2
+port #0 <- module #21 port #2
+-MODULE 22 END-
+-MODULE 23 START-
+1 (Number)
+960,-208
+NAME: Number 7
+-CONFIG START-
+3 1
+-CONFIG END-
+-MODULE 23 END-
+-MODULE 24 START-
+2 (Adder)
+1472,-304
+NAME: Adder 5
+port #0 <- module #25 port #0
+port #1 <- module #22 port #1
+-MODULE 24 END-
+-MODULE 25 START-
+1 (Number)
+1248,-336
+NAME: Number 8
+-CONFIG START-
+3 3
+-CONFIG END-
+-MODULE 25 END-
